@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 void main() {
   runApp(MyApp());
@@ -30,32 +31,61 @@ class LandingPage extends StatelessWidget {
         children: [
           Container(
             width: double.infinity,
+            height: 635,
             color: Colors.black87,
             child: Padding(
-              padding: EdgeInsets.all(16.0),
+              padding: EdgeInsets.only(top: 150, left: 300),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  Text(
-                    "Eu sou advogado",
+                  const Text(
+                    "BRUNO SOUTO ADVOGADO\nDO VOZEN NAO TEM JEITO",
                     style: TextStyle(
                       color: Color(0xFFD8AA52),
                       fontFamily: "Montserrat",
                       fontSize: 32.0,
-                      fontWeight: FontWeight.w700,
+                      fontWeight: FontWeight.w900,
                       height: 1.25,
                     ),
                   ),
-                  SizedBox(height: 20.0),
-                  Text(
-                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum",
+                  SizedBox(height: 40),
+                  const Text(
+                    "Lorem ipsum dolor sit amet, consectetur adipisicing elit,\nsed do eiusmod tempor incididunt ut labore et dolore magna,\naliqua. Ut enim ad minim veniam quis nostrud exercitation ullamco ",
                     style: TextStyle(
-                      color: Color(0xFFF7F7F7),
+                      color: Colors.white,
                       fontFamily: "Quicksand",
-                      fontSize: 20.0,
-                      fontWeight: FontWeight.w600,
+                      fontSize: 20,
                       height: 1.15,
-                      letterSpacing: 1.0,
+                      letterSpacing: 1,
+                    ),
+                  ),
+                  const SizedBox(
+                    height: 50,
+                  ),
+                  Container(
+                    color: Colors.white,
+                    height: 38,
+                    width: 325,
+                    child: const Row(
+                      children: [
+                        SizedBox(
+                          width: 17,
+                        ),
+                        FaIcon(FontAwesomeIcons.whatsapp),
+                        SizedBox(
+                          width: 10,
+                        ),
+                        Text(
+                          "ENTRE EM CONTATO COMIGO AGORA",
+                          style: TextStyle(
+                            fontFamily: "Montserrat",
+                            fontSize: 14,
+                            fontWeight: FontWeight.w700,
+                            letterSpacing: 0.2,
+                            color: Colors.black,
+                          ),
+                        ),
+                      ],
                     ),
                   ),
                 ],
